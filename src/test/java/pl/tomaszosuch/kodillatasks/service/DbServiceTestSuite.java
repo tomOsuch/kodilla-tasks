@@ -16,7 +16,7 @@ import static org.mockito.Mockito.*;
 
 @SpringBootTest
 public class DbServiceTestSuite {
-
+/*
     @InjectMocks
     private DbServicesImpl dbServices;
 
@@ -68,5 +68,5 @@ public class DbServiceTestSuite {
         dbServices.deleteTask(taskId);
         //Then
         verify(taskRepository, times(1)).deleteById(taskId);
-    }
+    }*/
 }
