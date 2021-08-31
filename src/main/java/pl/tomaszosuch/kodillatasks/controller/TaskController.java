@@ -1,11 +1,10 @@
 package pl.tomaszosuch.kodillatasks.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import pl.tomaszosuch.kodillatasks.domain.Task;
-import pl.tomaszosuch.kodillatasks.domain.TaskDto;
+import pl.tomaszosuch.kodillatasks.dto.TaskDto;
 import pl.tomaszosuch.kodillatasks.exception.TaskNotFoundException;
 import pl.tomaszosuch.kodillatasks.mapper.TaskMapper;
 import pl.tomaszosuch.kodillatasks.service.DbServicesImpl;

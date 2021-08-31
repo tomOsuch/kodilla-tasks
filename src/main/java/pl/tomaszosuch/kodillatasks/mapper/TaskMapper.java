@@ -2,7 +2,7 @@ package pl.tomaszosuch.kodillatasks.mapper;
 
 import org.springframework.stereotype.Service;
 import pl.tomaszosuch.kodillatasks.domain.Task;
-import pl.tomaszosuch.kodillatasks.domain.TaskDto;
+import pl.tomaszosuch.kodillatasks.dto.TaskDto;
 
 import java.util.List;
 import java.util.stream.Collectors;
