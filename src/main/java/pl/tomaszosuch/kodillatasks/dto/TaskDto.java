@@ -1,4 +1,4 @@
-package pl.tomaszosuch.kodillatasks.domain;
+package pl.tomaszosuch.kodillatasks.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

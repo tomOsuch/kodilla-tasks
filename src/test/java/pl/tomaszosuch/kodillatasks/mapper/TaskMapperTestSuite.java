@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import pl.tomaszosuch.kodillatasks.domain.Task;
-import pl.tomaszosuch.kodillatasks.domain.TaskDto;
+import pl.tomaszosuch.kodillatasks.dto.TaskDto;
 
 import java.util.List;
 
