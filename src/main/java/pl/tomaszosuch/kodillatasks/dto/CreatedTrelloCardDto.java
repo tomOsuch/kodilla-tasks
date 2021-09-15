@@ -1,4 +1,4 @@
-package pl.tomaszosuch.kodillatasks.domain;
+package pl.tomaszosuch.kodillatasks.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CreatedTrelloCard {
+public class CreatedTrelloCardDto {
 
     @JsonProperty("id")
     private String id;
@@ -20,4 +20,7 @@ public class CreatedTrelloCard {
 
     @JsonProperty("shortUrl")
     private String shortUrl;
+
+    @JsonProperty("badges")
+    private BadgesDto badges;
 }
