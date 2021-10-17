@@ -6,6 +6,7 @@ import pl.tomaszosuch.kodillatasks.client.TrelloClient;
 import pl.tomaszosuch.kodillatasks.dto.CreatedTrelloCardDto;
 import pl.tomaszosuch.kodillatasks.dto.TrelloBoardDto;
 import pl.tomaszosuch.kodillatasks.dto.TrelloCardDto;
+import pl.tomaszosuch.kodillatasks.service.TrelloService;
 
 import java.util.List;
 
@@ -15,21 +16,11 @@ import java.util.List;
 public class TrelloController {
 
     private final TrelloClient trelloClient;
+    private final TrelloService trelloService;
 
     @GetMapping("getTrelloBoards")
-    public void getTrelloBoards() {
-
-        List<TrelloBoardDto> trelloBoards = trelloClient.getTrelloBoards();
-
-        trelloBoards.forEach(trelloBoardDto -> {
-            System.out.println(trelloBoardDto.getId() + " " + trelloBoardDto.getName());
-            System.out.println("This board contains lists");
-
-            trelloBoardDto.getLists().forEach(trelloListDto -> {
-                System.out.println(trelloListDto.getName() + " - " + trelloListDto.getId() + " - " + trelloListDto.isClosed());
-            });
-        });
-
+    public List<TrelloBoardDto> getTrelloBoards() {
+        return trelloService.fetchTrelloBoards();
     }
 
     @PostMapping("createTrelloCard")
